@@ -50,10 +50,6 @@ export const links = [
         ]
     },
     {
-        name: "PHOTOGALLERY",
-        submenu: false,
-    },
-    {
         name: "MEDIA",
         submenu: true,
         sublinks: [{
