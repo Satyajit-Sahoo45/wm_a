@@ -1,6 +1,6 @@
 export const links = [
     {
-        name: "Homw",
+        name: "Home",
         submenu: false,
     },
     {
@@ -61,7 +61,22 @@ export const links = [
             sublink: [
                 {
                     name: "What's New", link: "/"
-                }
+                },
+                {
+                    name: "Articles", link: "/"
+                },
+                {
+                    name: "Events", link: "/"
+                },
+                {
+                    name: "New's Letters", link: "/"
+                },
+                {
+                    name: "Blog", link: "/"
+                },
+                {
+                    name: "Clinic Videos", link: "/"
+                },
             ]
         }]
     },
@@ -73,7 +88,7 @@ export const links = [
             sublink: [
                 {
                     name: "WHY US", link: "/"
-                }
+                },
             ]
         }]
     },
@@ -83,6 +98,9 @@ export const links = [
         sublinks: [{
             Head: "",
             sublink: [
+                {
+                    name: "FRANCHISE", link: "/"
+                },
                 {
                     name: "CAREER", link: "/"
                 }
