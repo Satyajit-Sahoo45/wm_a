@@ -13,7 +13,7 @@ const NavLinks = () => {
                 <div key={index}>
                     <div className="relative group min-w-max">
                         <span
-                            className={`py-3 text-sm relative text-gray-500 hover:text-black hover:font-bold cursor-pointer md:after:block md:after:content-[''] md:after:absolute md:after:h-[1px] md:after:bg-[#292929] md:after:w-full md:after:scale-x-0 md:after:hover:scale-x-100 md:after:transition md:after:duration-500 md:after:origin-center flex justify-between transition-all duration-300`}
+                            className={`py-3 text-sm relative text-gray-500 hover:text-black hover:font-bold cursor-pointer md:after:block md:after:content-[''] md:after:absolute md:after:h-[1px] md:after:bg-[#292929] md:after:w-full md:after:scale-x-0 md:after:hover:scale-x-100 md:after:transition md:after:duration-500 md:after:origin-center md:block flex justify-between`}
                             onClick={() => {
                                 heading !== link.name ? setHeading(link.name) : setHeading("");
                                 setSubHeading("");
@@ -24,7 +24,7 @@ const NavLinks = () => {
                             </span>
                             {
                                 link.submenu && (
-                                    <span className="text-xl">
+                                    <span className="text-xl md:hidden">
                                         {heading === link.name
                                             ? <ChevronUp />
                                             : <ChevronDown />
@@ -37,7 +37,7 @@ const NavLinks = () => {
                         {link.submenu && (
                             <div>
                                 {/* Desktop */}
-                                <div className="absolute top-10 hidden group-hover:md:block hover:md:block min-w-max">
+                                <div className="absolute top-10 hidden group-hover:md:block hover:md:block min-w-max z-50">
                                     <div className="py-3">
                                         <div className="w-4 h-4 left-3 absolute mt-1 bg-white rotate-45"></div>
                                     </div>
