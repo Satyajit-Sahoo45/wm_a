@@ -26,7 +26,7 @@ export const Modal = () => {
         onSubmit: async ({ name, email, phone, concern }) => {
             setLoader(true)
             try {
-                await axios.post(`http://localhost:8000/api/book`,
+                await axios.post(`${process.env.REACT_APP_BACKEND_API_URL}/book`,
                     { data: { name, email, phone, concern } }
                 )
                 toast.success('Successfully Booked!')
